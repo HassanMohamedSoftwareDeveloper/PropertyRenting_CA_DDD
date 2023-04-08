@@ -1,0 +1,76 @@
+<app-page-header PageHeader="{{'City.PageTitle'|translate}}"></app-page-header>
+<app-error></app-error>
+
+<div class="qb-form mw-100 overflow-auto">
+  <app-form-header FormTitle="{{'City.ListFormTitle'|translate}}">
+    <li>
+      <a mat-button routerLink="add" class="qb-action-btn">
+        <mat-icon>add_boxv</mat-icon> {{'Common.AddNew'|translate}}
+      </a>
+    </li>
+    <li>
+      <a mat-button (click)="Search(false)" class="qb-action-btn">
+        <mat-icon>refresh</mat-icon> {{'Common.Refresh'|translate}}
+      </a>
+    </li>
+  </app-form-header>
+
+  <mat-form-field appearance="fill">
+    <mat-label> {{'Common.Search'|translate}}</mat-label>
+    <input matInput [(ngModel)]="searchValue" (change)="Search(true)" />
+    <mat-icon class='search-icon' color="primary" matSuffix (click)="Search(true)" style="cursor:pointer!important;">search</mat-icon>
+  </mat-form-field>
+
+  <mat-table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="Actions" stickyEnd>
+      <mat-header-cell *matHeaderCellDef>
+        {{'Common.Actions'|translate}}
+      </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+
+        <button mat-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item routerLink="edit/{{element.cityId}}">
+            <mat-icon class="text-primary">edit</mat-icon>
+            <span> {{'Common.Edit'|translate}}</span>
+          </button>
+          <button mat-menu-item (click)="Delete(element)">
+            <mat-icon class="text-danger">delete</mat-icon>
+            <span> {{'Common.Delete'|translate}}</span>
+          </button>
+        </mat-menu>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="CityName">
+      <mat-header-cell *matHeaderCellDef>  {{'City.CityName'|translate}} </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.cityName}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="Country">
+      <mat-header-cell *matHeaderCellDef>  {{'City.Country'|translate}} </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.countryName}} </mat-cell>
+    </ng-container>
+
+
+
+
+    <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <mat-paginator class="demo-paginator"
+                 (page)="handlePageEvent($event)"
+                 [length]="length"
+                 [pageSize]="pageSize"
+                 [disabled]="disabled"
+                 [showFirstLastButtons]="showFirstLastButtons"
+                 [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []"
+                 [hidePageSize]="hidePageSize"
+                 [pageIndex]="pageIndex"
+                 aria-label="Select page of periodic elements">
+  </mat-paginator>
+</div>
+

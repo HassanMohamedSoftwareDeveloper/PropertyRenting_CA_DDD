@@ -1,0 +1,65 @@
+mat-table {
+  width: 100%;
+  overflow: auto;
+}
+
+.mat-header-row {
+  min-height: 45px !important;
+  border-bottom-width: 2px !important;
+  background-color: #028cca !important;
+
+  .mat-header-cell {
+    white-space: nowrap !important;
+    font-size: larger;
+    padding: 0px 10px !important;
+    color: white !important;
+  }
+
+  .mat-header-cell:not(:last-child, :first-child) {
+    border-left: 1px solid rgba(0,0,0,.12) !important;
+  }
+
+  .mat-header-cell:not(:last-child, :first-child):lang(ar) {
+    border-right: 1px solid rgba(0,0,0,.12) !important;
+  }
+}
+
+.mat-row {
+  min-height: 35px !important;
+
+  .mat-cell {
+    padding: 0px 10px !important;
+  }
+
+  .mat-cell:not(:last-child, :first-child) {
+    border-left: 1px solid rgba(0,0,0,.12) !important;
+  }
+
+  .mat-cell:not(:last-child, :first-child):lang(ar) {
+    border-right: 1px solid rgba(0,0,0,.12) !important;
+  }
+}
+
+.mat-column-Actions {
+  max-width: 80px !important;
+  border-left-width: 2px !important;
+  text-align: center !important;
+  border-left: 3px solid rgba(0,0,0,.12) !important;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+mat-label {
+  font-weight: bold;
+}
+
+.mat-row:hover {
+  border: 1px solid var(--second-color) !important;
+}

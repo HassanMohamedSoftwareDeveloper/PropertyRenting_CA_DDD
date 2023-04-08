@@ -1,0 +1,30 @@
+:host {
+  .mat-icon {
+    vertical-align: middle;
+  }
+
+  .mat-icon:lang(en) {
+    margin-right: 20px;
+  }
+
+  .mat-icon:lang(ar) {
+    margin-left: 20px;
+  }
+}
+
+.profile-card {
+  text-align: center;
+  padding: 0 20px 20px 20px;
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.mat-list-item:hover {
+  background-color: var(--default-color) !important;
+  color: white !important;
+}

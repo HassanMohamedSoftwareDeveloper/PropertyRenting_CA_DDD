@@ -1,0 +1,11 @@
+.form-group:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-label {
+  font-weight: bold;
+}

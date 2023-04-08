@@ -1,0 +1,9 @@
+﻿global using FastEndpoints;
+global using FluentValidation;
+global using MapsterMapper;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using PropertyRenting.Application.Commands.Country;
+global using PropertyRenting.Application.DTOs;
+global using PropertyRenting.Application.Queries.Building;
+global using PropertyRenting.Application.Queries.Country;

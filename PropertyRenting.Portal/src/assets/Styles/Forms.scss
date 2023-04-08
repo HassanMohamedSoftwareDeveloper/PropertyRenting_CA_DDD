@@ -1,0 +1,111 @@
+@import "ConfirmStyle.scss";
+@import "NgSelectStyle.scss";
+
+
+.mat-button-toggle.mat-button-toggle-checked {
+  color: var(--default-color) !important;
+  border-color: white !important;
+}
+
+.mat-button-toggle {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid var(--default-color) !important;
+}
+
+
+.list-item-active {
+  font-weight: 500 !important;
+  color: white !important;
+  background-color: var(--second-color) !important;
+}
+
+.qb-form {
+  max-width: 850px;
+  padding: 15px;
+  width: 100%;
+  margin: auto;
+  -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  position: relative;
+  background: #ffffff;
+}
+
+.qb-form-footer-actions {
+  padding-top: 15px !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.qb-btn {
+  background-color: var(--default-color) !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  min-width: fit-content !important;
+  border: 1px solid var(--default-color) !important;
+  padding: .2em .7em !important;
+  line-height: 36px !important;
+  text-align: center;
+  margin-left: 1em;
+  max-width: initial !important;
+  width: auto;
+  outline: none;
+  margin: 0 !important;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: background-color 0.8s ease-out;
+  transition: background-color 0.8s ease-out;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-weight: 500;
+}
+
+.qb-outline-btn {
+  @extend .qb-btn;
+  background-color: var(--second-color) !important;
+}
+
+.qb-outline-btn:hover {
+  @extend .qb-btn;
+}
+
+.qb-action-btn {
+  @extend .qb-outline-btn;
+  padding-top: .25px !important;
+  padding-bottom: .25px !important;
+}
+
+.qb-action-btn:hover {
+  padding-top: .25px !important;
+  padding-bottom: .25px !important;
+}
+
+
+.qb-btn[disabled], html .ts-btn[disabled] {
+  background-color: #ABABAB !important;
+}
+
+.form-title {
+  font-size: 22px !important;
+  color: #028cca !important;
+  font-weight: 600 !important;
+}
+
+.page-title {
+  font-size: 24px !important;
+  margin: 0 !important;
+  font-weight: 600 !important;
+}
+
+ul li {
+  list-style: none;
+}
+
+.qb-error {
+  font-size: 75%;
+  margin-top: .6666666667em;
+  padding-left: 1em;
+  padding-right: 1em;
+}

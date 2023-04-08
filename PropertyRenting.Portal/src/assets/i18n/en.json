@@ -1,0 +1,42 @@
+{
+  "Common": {
+    "Save": "Save",
+    "Reset": "Reset",
+    "BackToList": "Back To List",
+    "Refresh": "Refresh",
+    "AddNew": "Add",
+    "Edit": "Edit",
+    "Delete": "Delete",
+    "Actions": "Actions",
+    "Search": "Search",
+    "Required": " is required",
+    "Yes": "Yes",
+    "No": "No",
+    "NotFound": "No data found",
+    "Paginator": {
+      "ItemsPerPageLabel": "Items per page : ",
+      "FirstPageLabel": "First page",
+      "LastPageLabel": "Last page",
+      "NextPageLabel": "Next page",
+      "PreviousPageLabel": "Previous page",
+      "Page": "Page",
+      "Of": "Of"
+    }
+  },
+  "Country": {
+    "PageTitle": "Countries",
+    "ListFormTitle": "Countries List",
+    "DetailsFormTitle": "Country Details",
+    "CountryName": "Country Name",
+    "Nationality": "Nationality",
+    "DeleteMsg": "Are you sure to delete this country [ {0} ] ?"
+  },
+  "City": {
+    "PageTitle": "Cities",
+    "ListFormTitle": "Cities List",
+    "DetailsFormTitle": "City Details",
+    "CityName": "City Name",
+    "Country": "Country",
+    "DeleteMsg": "Are you sure to delete this city [ {0} ] ?"
+  }
+}

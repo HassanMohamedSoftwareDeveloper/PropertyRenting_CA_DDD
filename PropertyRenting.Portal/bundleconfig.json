@@ -1,0 +1,8 @@
+[
+  {
+    "outputFileName": "src/app/shared/components/sidebar/sidebar.component.min.html",
+    "inputFiles": [
+      "src/app/shared/components/sidebar/sidebar.component.html"
+    ]
+  }
+]

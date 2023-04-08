@@ -1,0 +1,18 @@
+<div class="error-form" *ngIf="hasError$ | async">
+
+  <div fxFlex fxLayout="column">
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+      <button mat-icon-button (click)="Clear()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxFlex fxLayout="row" class="error-list">
+      <ul fxLayout="column" fxLayoutGap="10px" class="w-100">
+        <li mat-icon-button *ngFor="let error of (errors$ | async)">
+          <mat-icon>error</mat-icon> <mat-error> {{error}}</mat-error>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

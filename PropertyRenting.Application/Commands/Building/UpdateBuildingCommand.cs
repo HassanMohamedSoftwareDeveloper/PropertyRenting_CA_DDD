@@ -1,0 +1,23 @@
+﻿namespace PropertyRenting.Application.Commands.Building;
+
+public record UpdateBuildingCommand(Guid BuildingId,
+                                    string Symbol,
+                                    string Name,
+                                    bool IsActive,
+                                    int Type,
+                                    Guid EmployeeId,
+                                    Guid DistrictId,
+                                    string Address,
+                                    string Location,
+                                    string Latitude,
+                                    string Longitude,
+                                    int ConstructionStatus,
+                                    int? EstablishYear,
+                                    decimal? TotalArea,
+                                    decimal? RentableArea,
+                                    decimal? YearRentAmount,
+                                    decimal? YearReRentAmount,
+                                    int? LevelsNumber,
+                                    DateOnly? ReceiveDate,
+                                    string Notes,
+                                    List<BuildingContributer> Contributers) : IRequest<ErrorOr<bool>>;

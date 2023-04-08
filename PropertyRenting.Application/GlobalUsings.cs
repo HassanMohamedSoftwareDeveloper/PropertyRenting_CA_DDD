@@ -1,0 +1,10 @@
+﻿global using ErrorOr;
+global using MediatR;
+global using PropertyRenting.Application.Helpers;
+global using PropertyRenting.Application.Primitives;
+global using PropertyRenting.Domain.Enums;
+global using PropertyRenting.Domain.Repositories;
+global using PropertyRenting.Domain.Services;
+global using PropertyRenting.Domain.ValueObjects.Common;
+global using PropertyRenting.Domain.ValueObjects.Country;
+global using PropertyRenting.Domain.ValueObjects.Renter;

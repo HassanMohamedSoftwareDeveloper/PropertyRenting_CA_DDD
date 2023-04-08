@@ -1,0 +1,38 @@
+<mat-nav-list>
+  <div class="profile-card">
+    <div class="header">
+      <h2>HASSAN MOHAMED</h2>
+      <h4>HassanMohaed_HM@Hotmail.com</h4>
+    </div>
+    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="HASSAN MOHAMED" />
+  </div>
+
+  <mat-divider></mat-divider>
+  <h2 matSubheader>Pages</h2>
+  <a mat-list-item [routerLinkActiveOptions]="{exact:true}" routerLinkActive="list-item-active" routerLink="/"> Dashboard</a>
+  <mat-divider></mat-divider>
+  <h2 matSubheader>Tools</h2>
+  <a mat-list-item [routerLinkActiveOptions]="{exact:true}" routerLinkActive="list-item-active" routerLink="/">
+    <mat-icon>import_contacts</mat-icon>
+    Contacts
+  </a>
+  <a mat-list-item [routerLinkActiveOptions]="{exact:true}" routerLinkActive="list-item-active" routerLink="/">
+    <mat-icon>contact_phone</mat-icon>
+    Leads
+  </a>
+  <mat-divider></mat-divider>
+  <h2 matSubheader>Lookups</h2>
+  <a mat-list-item [routerLinkActiveOptions]="{exact:false}" routerLinkActive="list-item-active" routerLink="countries">
+    <!--<mat-icon>contact_phone</mat-icon>-->
+    Countries
+  </a>
+  <a mat-list-item [routerLinkActiveOptions]="{exact:false}" routerLinkActive="list-item-active" routerLink="cities">
+    <!--<mat-icon>contact_phone</mat-icon>-->
+    Cities
+  </a>
+  <a mat-list-item [routerLinkActiveOptions]="{exact:false}" routerLinkActive="list-item-active" routerLink="districts">
+    <!--<mat-icon>contact_phone</mat-icon>-->
+    Districts
+  </a>
+  <mat-divider></mat-divider>
+</mat-nav-list>

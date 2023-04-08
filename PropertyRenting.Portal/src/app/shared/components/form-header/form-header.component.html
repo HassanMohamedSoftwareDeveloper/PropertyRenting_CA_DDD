@@ -1,0 +1,12 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <h2 class="form-title">{{FormTitle}}</h2>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+      <ul fxLayout="row" fxLayoutGap="5px">
+        <ng-content></ng-content>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-divider></mat-divider>

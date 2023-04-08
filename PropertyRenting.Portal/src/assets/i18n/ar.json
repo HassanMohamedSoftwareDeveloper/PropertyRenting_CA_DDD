@@ -1,0 +1,42 @@
+{
+  "Common": {
+    "Save": "حفظ",
+    "Reset": "تفريغ الحقول",
+    "BackToList": "العودة للقائمة",
+    "Refresh": "تحديث",
+    "AddNew": "إضافة",
+    "Edit": "تعديل",
+    "Delete": "حذف",
+    "Actions": "الإجراءات",
+    "Search": "بحث",
+    "Required": " مطلوب",
+    "Yes": "نعم",
+    "No": "لا",
+    "NotFound": "لا يوجد بيانات",
+    "Paginator": {
+      "ItemsPerPageLabel": "العناصر لكل صفحة : ",
+      "FirstPageLabel": "الصفحة الأولى",
+      "LastPageLabel": "الصفحة الأخيرة",
+      "NextPageLabel": "الصفحى التالية",
+      "PreviousPageLabel": "الصفحة السابقة",
+      "Page": "الصفحة",
+      "Of": "من"
+    }
+  },
+  "Country": {
+    "PageTitle": "الدول",
+    "ListFormTitle": "قائمة الدول",
+    "DetailsFormTitle": "بيانات الدولة",
+    "CountryName": "إسم الدولة",
+    "Nationality": "الجنسية",
+    "DeleteMsg": "هل تريد حذف هذه الدولة [ {0} ] ؟"
+  },
+  "City": {
+    "PageTitle": "المدن",
+    "ListFormTitle": "قائمة المدن",
+    "DetailsFormTitle": "بيانات المدينة",
+    "CityName": "إسم المدينة",
+    "Country": "الدولة",
+    "DeleteMsg": "هل تريد حذف هذه المدينة [ {0} ] ؟"
+  }
+}

@@ -1,0 +1,21 @@
+﻿namespace PropertyRenting.Application.Commands.Unit;
+
+public record AddUnitCommand(Guid BuildingId,
+                             string UnitNumber,
+                             string UnitName,
+                             bool IsActive,
+                             bool IsRented,
+                             DateOnly? ReceiveDate,
+                             Guid DistrictId,
+                             string Address,
+                             decimal? AnnualRentAmount,
+                             decimal? TotalArea,
+                             decimal? RentableArea,
+                             bool HasCentralAC,
+                             bool HasInternetService,
+                             uint? FloorNumber,
+                             uint? RoomsNumber,
+                             uint? ACsNumber,
+                             uint? HallsNumber,
+                             uint? PathsNumber,
+                             uint? KitchensNumber) : IRequest<ErrorOr<bool>>;
