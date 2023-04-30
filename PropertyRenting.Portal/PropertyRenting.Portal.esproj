@@ -11,6 +11,8 @@
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\PropertyRenting.Portal</BuildOutputFolder>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="src\app\blocks\" />
+    <Folder Include="src\app\core\" />
     <Folder Include="src\app\lookup\components\city\" />
     <Folder Include="src\assets\i18n\" />
   </ItemGroup>
