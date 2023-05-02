@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Renter;
+﻿namespace PropertyRenting.API.Endpoints.Renter;
 
 internal sealed class RenterGroup : Group
 {

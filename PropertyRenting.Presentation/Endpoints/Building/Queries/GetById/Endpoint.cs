@@ -1,4 +1,6 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Building.Queries.GetById;
+﻿using PropertyRenting.API.Endpoints.Building;
+
+namespace PropertyRenting.API.Endpoints.Building.Queries.GetById;
 
 internal sealed class Endpoint : EndpointWithoutRequest<BuildingDTO>
 {

@@ -1,10 +1,10 @@
 ﻿using ErrorOr;
 
-namespace PropertyRenting.Presentation.Endpoints;
+namespace PropertyRenting.API.Endpoints;
 
 public static class ResultExtensions
 {
-    public static IResult Failed(List<ErrorOr.Error> errors)
+    public static IResult Failed(List<Error> errors)
     {
         var firstError = errors[0];
         return firstError.Type switch

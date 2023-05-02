@@ -1,6 +1,6 @@
 ﻿using Serilog;
 
-namespace PropertyRenting.Presentation;
+namespace PropertyRenting.API;
 
 public static class SeriLogHelper
 {

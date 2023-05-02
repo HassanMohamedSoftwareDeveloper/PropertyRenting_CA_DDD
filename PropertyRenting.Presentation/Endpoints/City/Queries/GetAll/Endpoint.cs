@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.City;
+﻿using PropertyRenting.API.Endpoints.City;
+using PropertyRenting.Application.Queries.City;
 
-namespace PropertyRenting.Presentation.Endpoints.City.Queries.GetAll;
+namespace PropertyRenting.API.Endpoints.City.Queries.GetAll;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<CityReadDTO>>
 {

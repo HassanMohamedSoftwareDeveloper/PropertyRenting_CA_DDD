@@ -10,8 +10,8 @@ internal sealed class RenterReadService : BaseReadSevice, IRenterReadService
     {
     }
 
-    public async Task<bool> CanDeleteAsync(EntityId renterId)
+    public Task<bool> CanDeleteAsync(EntityId renterId)
     {
-        return true;
+        return Task.FromResult(true);
     }
 }

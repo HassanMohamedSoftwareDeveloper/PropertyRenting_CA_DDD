@@ -1,6 +1,6 @@
 ﻿using Carter;
 
-namespace PropertyRenting.Presentation.Endpoints;
+namespace PropertyRenting.API.Endpoints;
 
 public interface IGroupEndpoint : ICarterModule
 {

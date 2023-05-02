@@ -1,6 +1,6 @@
 ﻿using Mapster;
 
-namespace PropertyRenting.Presentation.Endpoints.Country.Commands.Add;
+namespace PropertyRenting.API.Endpoints.Country.Commands.Add;
 
 internal sealed class Endpoint : Endpoint<Request>
 {

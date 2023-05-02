@@ -1,6 +1,6 @@
 ﻿using Mapster;
 
-namespace PropertyRenting.Presentation.Endpoints.Country.Commands.Update;
+namespace PropertyRenting.API.Endpoints.Country.Commands.Update;
 
 
 internal sealed class MapperConfig : IRegister

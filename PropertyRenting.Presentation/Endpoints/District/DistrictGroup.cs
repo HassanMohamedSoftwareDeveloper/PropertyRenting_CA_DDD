@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.District;
+﻿namespace PropertyRenting.API.Endpoints.District;
 
 internal sealed class DistrictGroup : Group
 {

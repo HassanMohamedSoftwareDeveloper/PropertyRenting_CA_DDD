@@ -29,7 +29,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\PropertyRenting.Contracts\PropertyRenting.Contracts.csproj" />
 		<ProjectReference Include="..\PropertyRenting.Infrastructure\PropertyRenting.Infrastructure.csproj" />
 	</ItemGroup>
 

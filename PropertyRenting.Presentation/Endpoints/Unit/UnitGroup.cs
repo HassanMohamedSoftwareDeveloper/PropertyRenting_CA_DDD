@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Unit;
+﻿namespace PropertyRenting.API.Endpoints.Unit;
 
 public class UnitGroup : Group
 {

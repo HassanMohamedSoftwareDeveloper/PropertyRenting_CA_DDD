@@ -34,23 +34,12 @@ internal class PropertyRentingReadContext : DbContext
     #region Methods :
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfiguration(new BuildingReadModelConfiguration());
-        modelBuilder.ApplyConfiguration(new BuildingContributerReadModelConfiguration());
-        modelBuilder.ApplyConfiguration(new CityReadModelConfiguration());
-        modelBuilder.ApplyConfiguration(new ContactPersonReadModelConfiguration());
-        modelBuilder.ApplyConfiguration(new ContributerReadModelConfiguration());
-        modelBuilder.ApplyConfiguration(new CountryReadModelConfiguration());
-        modelBuilder.ApplyConfiguration(new DistrictReadModelConfiguration());
-        modelBuilder.ApplyConfiguration(new EmployeeReadModelConfiguration());
-        modelBuilder.ApplyConfiguration(new OwnerReadModelConfiguration());
-        modelBuilder.ApplyConfiguration(new RenterReadModelConfiguration());
-        modelBuilder.ApplyConfiguration(new UnitReadModelConfiguration());
-        // modelBuilder.ApplyConfigurationsFromAssembly(typeof(BuildingReadModelConfiguration).Assembly);
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(BuildingReadModelConfiguration).Assembly, x => x.Namespace == "PropertyRenting.Infrastructure.Persistence.Configurations.Read");
     }
-    protected override void ConfigureConventions(ModelConfigurationBuilder builder)
+    protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
     {
-        builder.Properties<DateOnly>().HaveConversion<DateOnlyConverter>().HaveColumnType("date");
-        builder.Properties<decimal>().HaveColumnType("decimal").HavePrecision(20, 4);
+        configurationBuilder.Properties<DateOnly>().HaveConversion<DateOnlyConverter>().HaveColumnType("date");
+        configurationBuilder.Properties<decimal>().HaveColumnType("decimal").HavePrecision(20, 4);
     }
     #endregion
 }

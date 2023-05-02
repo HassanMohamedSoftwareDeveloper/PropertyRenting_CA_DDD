@@ -5,7 +5,7 @@ using PropertyRenting.Domain.Entities.Country;
 using PropertyRenting.Domain.Entities.Renter;
 using PropertyRenting.Domain.ValueObjects.Common;
 using PropertyRenting.Infrastructure.Persistence.Configurations.Helpers;
-using PropertyRenting.Infrastructure.Persistence.Configurations.Write;
+using PropertyRenting.Infrastructure.Persistence.Configurations.Read;
 
 namespace PropertyRenting.Infrastructure.Persistence.Contexts;
 
@@ -38,28 +38,17 @@ public class PropertyRentingWriteContext : DbContext
     #region Methods :
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfiguration(new BuildingConfiguration());
-        modelBuilder.ApplyConfiguration(new BuildingContributerConfiguration());
-        modelBuilder.ApplyConfiguration(new CityConfiguration());
-        modelBuilder.ApplyConfiguration(new ContactPersonConfiguration());
-        modelBuilder.ApplyConfiguration(new ContributerConfiguration());
-        modelBuilder.ApplyConfiguration(new CountryConfiguration());
-        modelBuilder.ApplyConfiguration(new DistrictConfiguration());
-        modelBuilder.ApplyConfiguration(new EmployeeConfiguration());
-        modelBuilder.ApplyConfiguration(new OwnerConfiguration());
-        modelBuilder.ApplyConfiguration(new RenterConfiguration());
-        modelBuilder.ApplyConfiguration(new UnitConfiguration());
-        //modelBuilder.ApplyConfigurationsFromAssembly(typeof(BuildingConfiguration).Assembly);
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(BuildingReadModelConfiguration).Assembly, x => x.Namespace == "PropertyRenting.Infrastructure.Persistence.Configurations.Write");
     }
-    protected override void ConfigureConventions(ModelConfigurationBuilder builder)
+    protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
     {
-        builder.Properties<DateOnly>().HaveConversion<DateOnlyConverter>().HaveColumnType("date");
-        builder.Properties<EntityId>().HaveConversion<EntityIdConverter>();
-        builder.Properties<PhoneNumber>().HaveConversion<PhoneNumberConverter>();
-        builder.Properties<MobileNumber>().HaveConversion<MobileNumberConverter>();
-        builder.Properties<EmailAddress>().HaveConversion<EmailAddressConverter>();
-        builder.Properties<Percentage>().HaveConversion<PercentageConverter>();
-        builder.Properties<decimal>().HaveColumnType("decimal").HavePrecision(20, 4);
+        configurationBuilder.Properties<DateOnly>().HaveConversion<DateOnlyConverter>().HaveColumnType("date");
+        configurationBuilder.Properties<EntityId>().HaveConversion<EntityIdConverter>();
+        configurationBuilder.Properties<PhoneNumber>().HaveConversion<PhoneNumberConverter>();
+        configurationBuilder.Properties<MobileNumber>().HaveConversion<MobileNumberConverter>();
+        configurationBuilder.Properties<EmailAddress>().HaveConversion<EmailAddressConverter>();
+        configurationBuilder.Properties<Percentage>().HaveConversion<PercentageConverter>();
+        configurationBuilder.Properties<decimal>().HaveColumnType("decimal").HavePrecision(20, 4);
     }
     #endregion
 }

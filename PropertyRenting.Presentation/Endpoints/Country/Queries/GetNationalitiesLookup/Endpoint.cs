@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Country.Queries.GetNationalitiesLookup;
+﻿namespace PropertyRenting.API.Endpoints.Country.Queries.GetNationalitiesLookup;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<BaseLookupDTO>>
 {

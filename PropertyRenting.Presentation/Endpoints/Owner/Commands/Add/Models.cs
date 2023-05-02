@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Owner.Commands.Add;
+﻿namespace PropertyRenting.API.Endpoints.Owner.Commands.Add;
 
 internal record Request
 {

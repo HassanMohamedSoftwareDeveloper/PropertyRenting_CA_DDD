@@ -1,4 +1,6 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Country.Commands.Delete;
+﻿using PropertyRenting.API.Endpoints.Country;
+
+namespace PropertyRenting.API.Endpoints.Country.Commands.Delete;
 
 internal sealed class Endpoint : EndpointWithoutRequest
 {

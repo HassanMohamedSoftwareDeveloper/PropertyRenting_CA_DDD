@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Renter.Queries.GetByPageWithSearch;
+﻿namespace PropertyRenting.API.Endpoints.Renter.Queries.GetByPageWithSearch;
 
 public class Request
 {

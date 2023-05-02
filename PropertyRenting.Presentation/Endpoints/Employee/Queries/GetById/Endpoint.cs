@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.Employee;
+﻿using PropertyRenting.API.Endpoints.Employee;
+using PropertyRenting.Application.Queries.Employee;
 
-namespace PropertyRenting.Presentation.Endpoints.Employee.Queries.GetById;
+namespace PropertyRenting.API.Endpoints.Employee.Queries.GetById;
 
 internal sealed class Endpoint : EndpointWithoutRequest<EmployeeDTO>
 {

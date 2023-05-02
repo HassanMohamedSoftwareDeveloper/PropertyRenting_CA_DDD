@@ -1,7 +1,7 @@
 ﻿using Mapster;
 using PropertyRenting.Application.Commands.District;
 
-namespace PropertyRenting.Presentation.Endpoints.District.Commands.Add;
+namespace PropertyRenting.API.Endpoints.District.Commands.Add;
 
 internal sealed class AddEndpoint : Endpoint<Request>
 {

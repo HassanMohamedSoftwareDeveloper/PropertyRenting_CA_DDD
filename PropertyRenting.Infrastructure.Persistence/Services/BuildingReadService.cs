@@ -19,8 +19,8 @@ internal sealed class BuildingReadService : BaseReadSevice, IBuildingReadService
             .AnyAsync(x => (buildingId == null || x.Id != buildingId.Value) && EF.Functions.Like(x.Symbol, symbol.Value));
     }
 
-    public async Task<bool> CanDeleteAsync(EntityId buildingId)
+    public Task<bool> CanDeleteAsync(EntityId buildingId)
     {
-        return true;
+        return Task.FromResult(true);
     }
 }

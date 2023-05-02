@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.City;
+﻿namespace PropertyRenting.API.Endpoints.City;
 
 internal sealed class CityGroup : Group
 {

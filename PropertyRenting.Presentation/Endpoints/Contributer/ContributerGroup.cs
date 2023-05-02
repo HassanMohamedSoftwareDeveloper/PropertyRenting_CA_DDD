@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Contributer;
+﻿namespace PropertyRenting.API.Endpoints.Contributer;
 
 internal sealed class ContributerGroup : Group
 {

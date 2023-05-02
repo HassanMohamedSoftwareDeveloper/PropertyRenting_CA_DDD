@@ -19,9 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyRenting.Infrastruct
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyRenting.Infrastructure.Persistence", "PropertyRenting.Infrastructure.Persistence\PropertyRenting.Infrastructure.Persistence.csproj", "{E2629370-C6CF-4F13-B11F-3683CCD8EFBF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyRenting.Presentation", "PropertyRenting.Presentation\PropertyRenting.Presentation.csproj", "{202F61D4-9D7D-45D2-B92C-0FDD28C809A2}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyRenting.Contracts", "PropertyRenting.Contracts\PropertyRenting.Contracts.csproj", "{3FB4D56D-3138-4184-BA00-0CB6EA2594DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyRenting.API", "PropertyRenting.Presentation\PropertyRenting.API.csproj", "{202F61D4-9D7D-45D2-B92C-0FDD28C809A2}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "PropertyRenting.Portal", "PropertyRenting.Portal\PropertyRenting.Portal.esproj", "{0F06DC6F-F330-4187-B234-9D8A79CFD1E7}"
 EndProject
@@ -51,10 +49,6 @@ Global
 		{202F61D4-9D7D-45D2-B92C-0FDD28C809A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{202F61D4-9D7D-45D2-B92C-0FDD28C809A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{202F61D4-9D7D-45D2-B92C-0FDD28C809A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3FB4D56D-3138-4184-BA00-0CB6EA2594DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FB4D56D-3138-4184-BA00-0CB6EA2594DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FB4D56D-3138-4184-BA00-0CB6EA2594DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FB4D56D-3138-4184-BA00-0CB6EA2594DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0F06DC6F-F330-4187-B234-9D8A79CFD1E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F06DC6F-F330-4187-B234-9D8A79CFD1E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F06DC6F-F330-4187-B234-9D8A79CFD1E7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -74,7 +68,6 @@ Global
 		{276CA4AB-9610-4BF8-9F62-A9C3B9CD02E4} = {0133CF8E-E548-4E20-8585-840AA73A8040}
 		{E2629370-C6CF-4F13-B11F-3683CCD8EFBF} = {0133CF8E-E548-4E20-8585-840AA73A8040}
 		{202F61D4-9D7D-45D2-B92C-0FDD28C809A2} = {8196C979-D8B9-4122-8677-7A6F458F3E06}
-		{3FB4D56D-3138-4184-BA00-0CB6EA2594DF} = {8196C979-D8B9-4122-8677-7A6F458F3E06}
 		{0F06DC6F-F330-4187-B234-9D8A79CFD1E7} = {8196C979-D8B9-4122-8677-7A6F458F3E06}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

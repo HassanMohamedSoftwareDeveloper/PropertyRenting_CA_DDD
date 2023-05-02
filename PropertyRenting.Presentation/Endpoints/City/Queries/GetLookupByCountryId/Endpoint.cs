@@ -1,6 +1,6 @@
 ﻿using PropertyRenting.Application.Queries.City;
 
-namespace PropertyRenting.Presentation.Endpoints.City.Queries.GetLookupByCountryId;
+namespace PropertyRenting.API.Endpoints.City.Queries.GetLookupByCountryId;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<BaseLookupDTO>>
 {

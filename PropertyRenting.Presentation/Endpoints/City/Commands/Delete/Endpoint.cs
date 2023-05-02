@@ -1,6 +1,6 @@
 ﻿using PropertyRenting.Application.Commands.City;
 
-namespace PropertyRenting.Presentation.Endpoints.City.Commands.Delete;
+namespace PropertyRenting.API.Endpoints.City.Commands.Delete;
 
 internal sealed class Endpoint : EndpointWithoutRequest
 {

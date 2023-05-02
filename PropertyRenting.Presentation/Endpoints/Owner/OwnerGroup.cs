@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Owner;
+﻿namespace PropertyRenting.API.Endpoints.Owner;
 
 internal sealed class OwnerGroup : Group
 {

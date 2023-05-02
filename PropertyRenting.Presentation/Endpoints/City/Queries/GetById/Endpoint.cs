@@ -1,6 +1,6 @@
 ﻿using PropertyRenting.Application.Queries.City;
 
-namespace PropertyRenting.Presentation.Endpoints.City.Queries.GetById;
+namespace PropertyRenting.API.Endpoints.City.Queries.GetById;
 
 internal sealed class Endpoint : EndpointWithoutRequest<CityDTO>
 {

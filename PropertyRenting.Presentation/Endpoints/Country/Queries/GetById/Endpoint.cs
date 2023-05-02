@@ -1,4 +1,6 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Country.Queries.GetById;
+﻿using PropertyRenting.API.Endpoints.Country;
+
+namespace PropertyRenting.API.Endpoints.Country.Queries.GetById;
 
 internal sealed class Endpoint : EndpointWithoutRequest<CountryDTO>
 {

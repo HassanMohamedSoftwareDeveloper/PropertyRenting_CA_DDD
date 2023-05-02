@@ -23,7 +23,7 @@ public static class PagedListQueryableExtenstions
             .Skip(skipped)
             .Take(pageSize)
             .ToListAsync(cancellationToken: cancellationToken)
-            .ConfigureAwait(false); ;
+            .ConfigureAwait(false);
         return new(items, count, page, pageSize);
     }
 

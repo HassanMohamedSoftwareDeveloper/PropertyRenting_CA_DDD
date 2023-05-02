@@ -1,6 +1,6 @@
 using FastEndpoints.Swagger;
+using PropertyRenting.API;
 using PropertyRenting.Infrastructure.Persistence;
-using PropertyRenting.Presentation;
 using Serilog;
 using System.Text.Json;
 

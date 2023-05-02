@@ -1,6 +1,6 @@
 ﻿using PropertyRenting.Application.Queries.Renter;
 
-namespace PropertyRenting.Presentation.Endpoints.Renter.Queries.GetById;
+namespace PropertyRenting.API.Endpoints.Renter.Queries.GetById;
 
 internal sealed class Endpoint : EndpointWithoutRequest<RenterDTO>
 {

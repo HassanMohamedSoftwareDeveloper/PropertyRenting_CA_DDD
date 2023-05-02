@@ -1,7 +1,7 @@
 ﻿using Mapster;
 using PropertyRenting.Application.Commands.Unit;
 
-namespace PropertyRenting.Presentation.Endpoints.Unit.Commands.Update;
+namespace PropertyRenting.API.Endpoints.Unit.Commands.Update;
 
 internal sealed class Endpoint : Endpoint<Request>
 {

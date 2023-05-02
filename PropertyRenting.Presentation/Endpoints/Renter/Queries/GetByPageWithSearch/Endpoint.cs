@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.Renter;
+﻿using PropertyRenting.API.Endpoints.Renter;
+using PropertyRenting.Application.Queries.Renter;
 
-namespace PropertyRenting.Presentation.Endpoints.Renter.Queries.GetByPageWithSearch;
+namespace PropertyRenting.API.Endpoints.Renter.Queries.GetByPageWithSearch;
 
 internal sealed class Endpoint : Endpoint<Request, PagedList<RenterReadDTO>>
 {

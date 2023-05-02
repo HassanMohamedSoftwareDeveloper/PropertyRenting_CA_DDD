@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Building;
+﻿namespace PropertyRenting.API.Endpoints.Building;
 
 public class BuildingGroup : Group
 {

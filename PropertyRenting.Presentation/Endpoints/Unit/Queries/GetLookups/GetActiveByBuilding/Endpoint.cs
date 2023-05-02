@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.Unit;
+﻿using PropertyRenting.API.Endpoints.Unit;
+using PropertyRenting.Application.Queries.Unit;
 
-namespace PropertyRenting.Presentation.Endpoints.Unit.Queries.GetLookups.GetActiveByBuilding;
+namespace PropertyRenting.API.Endpoints.Unit.Queries.GetLookups.GetActiveByBuilding;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<BaseLookupDTO>>
 {

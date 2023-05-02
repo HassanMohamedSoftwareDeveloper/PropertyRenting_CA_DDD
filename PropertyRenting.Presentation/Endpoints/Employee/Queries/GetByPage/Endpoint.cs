@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.Employee;
+﻿using PropertyRenting.API.Endpoints.Employee;
+using PropertyRenting.Application.Queries.Employee;
 
-namespace PropertyRenting.Presentation.Endpoints.Employee.Queries.GetByPage;
+namespace PropertyRenting.API.Endpoints.Employee.Queries.GetByPage;
 
 internal sealed class Endpoint : Endpoint<Request, PagedList<EmployeeDTO>>
 {

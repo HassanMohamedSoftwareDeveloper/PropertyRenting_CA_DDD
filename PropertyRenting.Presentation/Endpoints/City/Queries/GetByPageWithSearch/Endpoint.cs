@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.City;
+﻿using PropertyRenting.API.Endpoints.City;
+using PropertyRenting.Application.Queries.City;
 
-namespace PropertyRenting.Presentation.Endpoints.City.Queries.GetByPageWithSearch;
+namespace PropertyRenting.API.Endpoints.City.Queries.GetByPageWithSearch;
 
 internal sealed class Endpoint : Endpoint<Request, PagedList<CityReadDTO>>
 {

@@ -13,9 +13,9 @@ internal sealed class UnitReadService : BaseReadSevice, IUnitReadService
     {
     }
 
-    public async Task<bool> CanDeleteAsync(EntityId unitId)
+    public Task<bool> CanDeleteAsync(EntityId unitId)
     {
-        return true;
+        return Task.FromResult(true);
     }
 
     public async Task<bool> ExistsByUnitNumberAsync(EntityId unitId, UnitNumber unitNumber)

@@ -1,4 +1,6 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Building.Queries.GetActiveBuildingsLookup;
+﻿using PropertyRenting.API.Endpoints.Building;
+
+namespace PropertyRenting.API.Endpoints.Building.Queries.GetActiveBuildingsLookup;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<BaseLookupDTO>>
 {

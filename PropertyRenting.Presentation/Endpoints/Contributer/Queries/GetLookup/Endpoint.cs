@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.Contributer;
+﻿using PropertyRenting.API.Endpoints.Contributer;
+using PropertyRenting.Application.Queries.Contributer;
 
-namespace PropertyRenting.Presentation.Endpoints.Contributer.Queries.GetLookup;
+namespace PropertyRenting.API.Endpoints.Contributer.Queries.GetLookup;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<BaseLookupDTO>>
 {

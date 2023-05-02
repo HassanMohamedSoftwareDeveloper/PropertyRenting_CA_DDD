@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.District;
+﻿using PropertyRenting.API.Endpoints.District;
+using PropertyRenting.Application.Queries.District;
 
-namespace PropertyRenting.Presentation.Endpoints.District.Queries.GetLookup;
+namespace PropertyRenting.API.Endpoints.District.Queries.GetLookup;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<BaseLookupDTO>>
 {

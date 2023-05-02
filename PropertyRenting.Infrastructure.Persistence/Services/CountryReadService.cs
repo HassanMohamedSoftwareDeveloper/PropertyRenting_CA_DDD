@@ -13,19 +13,19 @@ internal sealed class CountryReadService : BaseReadSevice, ICountryReadService
     {
     }
 
-    public async Task<bool> CanDeleteAsync(EntityId countryId)
+    public Task<bool> CanDeleteAsync(EntityId countryId)
     {
-        return true;
+        return Task.FromResult(true);
     }
 
-    public async Task<bool> CanDeleteCityAsync(EntityId cityId)
+    public Task<bool> CanDeleteCityAsync(EntityId cityId)
     {
-        return true;
+        return Task.FromResult(true);
     }
 
-    public async Task<bool> CanDeleteDistrictAsync(EntityId districtId)
+    public Task<bool> CanDeleteDistrictAsync(EntityId districtId)
     {
-        return true;
+        return Task.FromResult(true);
     }
 
     public async Task<bool> ExistsByNameOrNationaalityAsync(EntityId countryId, CountryName name, Nationality nationality)

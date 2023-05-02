@@ -17,7 +17,7 @@ internal abstract class ReadRepository<TEntity> where TEntity : BaseReadModel
     #endregion
 
     #region CTORS :
-    public ReadRepository(PropertyRentingReadContext context)
+    protected ReadRepository(PropertyRentingReadContext context)
     {
         if (context is null) throw new ArgumentNullException(nameof(context));
 
@@ -27,38 +27,34 @@ internal abstract class ReadRepository<TEntity> where TEntity : BaseReadModel
     #endregion
 
     #region Methods :
-    public async Task<List<TLookup>> GetLookupAsync<TLookup>(ISpecification<TEntity> specification, CancellationToken cancellationToken = default)
-    {
-        return await ApplySpecification(specification)
+    public async Task<List<TLookup>> GetLookupAsync<TLookup>(ISpecification<TEntity> specification,
+                                                             CancellationToken cancellationToken = default)
+    => await ApplySpecification(specification)
            .ProjectToType<TLookup>()
            .ToListAsync(cancellationToken)
            .ConfigureAwait(false);
-    }
-    public async Task<List<TData>> GetAsync<TData>(ISpecification<TEntity> specification, CancellationToken cancellationToken = default)
-    {
-        return await ApplySpecification(specification)
+    public async Task<List<TData>> GetAsync<TData>(ISpecification<TEntity> specification,
+                                                   CancellationToken cancellationToken = default)
+    => await ApplySpecification(specification)
           .ProjectToType<TData>()
           .ToListAsync(cancellationToken)
           .ConfigureAwait(false);
-    }
-    public async Task<PagedList<TData>> GetPageAsync<TData>(ISpecification<TEntity> specification, int page, int pageSize, CancellationToken cancellationToken = default)
-    {
-        return await ApplySpecification(specification)
+    public async Task<PagedList<TData>> GetPageAsync<TData>(ISpecification<TEntity> specification,
+                                                            int page,
+                                                            int pageSize,
+                                                            CancellationToken cancellationToken = default)
+        => await ApplySpecification(specification)
          .ProjectToType<TData>()
          .ToPagedListAsync(page, pageSize, cancellationToken)
          .ConfigureAwait(false);
-    }
-    public async Task<TData> GetByIdAsync<TData>(ISpecification<TEntity> specification, CancellationToken cancellationToken = default)
-    {
-        return await ApplySpecification(specification)
+    public async Task<TData> GetByIdAsync<TData>(ISpecification<TEntity> specification,
+                                                 CancellationToken cancellationToken = default)
+        => await ApplySpecification(specification)
           .ProjectToType<TData>()
           .SingleOrDefaultAsync(cancellationToken)
           .ConfigureAwait(false);
-    }
 
     protected IQueryable<TEntity> ApplySpecification(ISpecification<TEntity> specification)
-    {
-        return SpecificationEvaluator.GetQuery(EntitySet.AsQueryable(), specification);
-    }
+        => SpecificationEvaluator.GetQuery(EntitySet.AsQueryable(), specification);
     #endregion
 }

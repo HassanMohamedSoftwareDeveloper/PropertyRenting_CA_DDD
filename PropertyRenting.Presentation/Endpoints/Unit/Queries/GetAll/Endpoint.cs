@@ -1,6 +1,6 @@
 ﻿using PropertyRenting.Application.Queries.Unit;
 
-namespace PropertyRenting.Presentation.Endpoints.Unit.Queries.GetAll;
+namespace PropertyRenting.API.Endpoints.Unit.Queries.GetAll;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<UnitReadDTO>>
 {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PropertyRenting.Presentation.Resources {
+namespace PropertyRenting.API.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace PropertyRenting.Presentation.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PropertyRenting.Presentation.Resources.Common", typeof(Common).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PropertyRenting.API.Resources.Common", typeof(Common).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

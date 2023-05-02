@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Commands.District;
+﻿using PropertyRenting.API.Endpoints.District;
+using PropertyRenting.Application.Commands.District;
 
-namespace PropertyRenting.Presentation.Endpoints.District.Commands.Delete;
+namespace PropertyRenting.API.Endpoints.District.Commands.Delete;
 
 internal sealed class DeleteEndpoint : EndpointWithoutRequest
 {

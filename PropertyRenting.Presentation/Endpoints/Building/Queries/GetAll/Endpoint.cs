@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Building.Queries.GetAll;
+﻿namespace PropertyRenting.API.Endpoints.Building.Queries.GetAll;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<BuildingReadDTO>>
 {

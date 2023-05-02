@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Commands.Owner;
+﻿using PropertyRenting.API.Endpoints.Owner;
+using PropertyRenting.Application.Commands.Owner;
 
-namespace PropertyRenting.Presentation.Endpoints.Owner.Commands.Delete;
+namespace PropertyRenting.API.Endpoints.Owner.Commands.Delete;
 
 internal sealed class Endpoint : EndpointWithoutRequest
 {

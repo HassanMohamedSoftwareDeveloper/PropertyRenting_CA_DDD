@@ -1,6 +1,6 @@
 ﻿using PropertyRenting.Application.Queries.Contributer;
 
-namespace PropertyRenting.Presentation.Endpoints.Contributer.Queries.GetAll;
+namespace PropertyRenting.API.Endpoints.Contributer.Queries.GetAll;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<ContributerDTO>>
 {

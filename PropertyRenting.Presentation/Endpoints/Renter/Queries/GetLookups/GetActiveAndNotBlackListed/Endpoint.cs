@@ -1,6 +1,6 @@
 ﻿using PropertyRenting.Application.Queries.Renter;
 
-namespace PropertyRenting.Presentation.Endpoints.Renter.Queries.GetLookups.GetActiveAndNotBlackListed;
+namespace PropertyRenting.API.Endpoints.Renter.Queries.GetLookups.GetActiveAndNotBlackListed;
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<BaseLookupDTO>>
 {

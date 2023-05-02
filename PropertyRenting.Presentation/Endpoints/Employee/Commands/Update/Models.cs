@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Employee.Commands.Update;
+﻿namespace PropertyRenting.API.Endpoints.Employee.Commands.Update;
 
 internal record Request
 {

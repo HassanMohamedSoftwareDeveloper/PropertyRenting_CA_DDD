@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Owner.Queries.GetByPage;
+﻿namespace PropertyRenting.API.Endpoints.Owner.Queries.GetByPage;
 
 public class Request
 {

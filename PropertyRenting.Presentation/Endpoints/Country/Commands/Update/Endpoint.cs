@@ -1,6 +1,7 @@
 ﻿using Mapster;
+using PropertyRenting.API.Endpoints.Country;
 
-namespace PropertyRenting.Presentation.Endpoints.Country.Commands.Update;
+namespace PropertyRenting.API.Endpoints.Country.Commands.Update;
 
 internal sealed class Endpoint : Endpoint<Request>
 {

@@ -6,7 +6,7 @@ using PropertyRenting.Infrastructure;
 using System.Reflection;
 using IMapper = MapsterMapper.IMapper;
 
-namespace PropertyRenting.Presentation;
+namespace PropertyRenting.API;
 
 public static class DependancyInjection
 {

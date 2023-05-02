@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.Owner;
+﻿using PropertyRenting.API.Endpoints.Owner;
+using PropertyRenting.Application.Queries.Owner;
 
-namespace PropertyRenting.Presentation.Endpoints.Owner.Queries.GetByPage;
+namespace PropertyRenting.API.Endpoints.Owner.Queries.GetByPage;
 
 internal sealed class Endpoint : Endpoint<Request, PagedList<OwnerDTO>>
 {

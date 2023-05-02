@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Employee;
+﻿namespace PropertyRenting.API.Endpoints.Employee;
 
 internal sealed class EmployeeGroup : Group
 {

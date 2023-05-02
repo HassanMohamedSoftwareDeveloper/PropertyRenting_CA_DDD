@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Country;
+﻿namespace PropertyRenting.API.Endpoints.Country;
 
 internal sealed class CountryGroup : Group
 {

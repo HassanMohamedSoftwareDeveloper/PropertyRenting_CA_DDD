@@ -1,4 +1,6 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Building.Queries.GetByPageWithSearch;
+﻿using PropertyRenting.API.Endpoints.Building;
+
+namespace PropertyRenting.API.Endpoints.Building.Queries.GetByPageWithSearch;
 
 internal sealed class Endpoint : Endpoint<Request, PagedList<BuildingReadDTO>>
 {

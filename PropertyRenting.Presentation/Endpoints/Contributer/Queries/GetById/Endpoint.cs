@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.Contributer;
+﻿using PropertyRenting.API.Endpoints.Contributer;
+using PropertyRenting.Application.Queries.Contributer;
 
-namespace PropertyRenting.Presentation.Endpoints.Contributer.Queries.GetById;
+namespace PropertyRenting.API.Endpoints.Contributer.Queries.GetById;
 
 internal sealed class Endpoint : EndpointWithoutRequest<ContributerDTO>
 {

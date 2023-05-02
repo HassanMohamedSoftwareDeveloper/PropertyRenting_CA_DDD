@@ -1,6 +1,6 @@
 ﻿using PropertyRenting.Application.Queries.Unit;
 
-namespace PropertyRenting.Presentation.Endpoints.Unit.Queries.GetByPage;
+namespace PropertyRenting.API.Endpoints.Unit.Queries.GetByPage;
 
 internal sealed class Endpoint : Endpoint<Request, PagedList<UnitReadDTO>>
 {

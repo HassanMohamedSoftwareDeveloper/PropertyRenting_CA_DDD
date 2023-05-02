@@ -1,4 +1,4 @@
-﻿namespace PropertyRenting.Presentation.Endpoints.Country.Queries.GetByPage;
+﻿namespace PropertyRenting.API.Endpoints.Country.Queries.GetByPage;
 
 internal sealed class Endpoint : Endpoint<Request, PagedList<CountryDTO>>
 {

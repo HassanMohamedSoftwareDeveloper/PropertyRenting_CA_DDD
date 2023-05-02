@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.Unit;
+﻿using PropertyRenting.API.Endpoints.Unit;
+using PropertyRenting.Application.Queries.Unit;
 
-namespace PropertyRenting.Presentation.Endpoints.Unit.Queries.GetById;
+namespace PropertyRenting.API.Endpoints.Unit.Queries.GetById;
 
 internal sealed class Endpoint : EndpointWithoutRequest<UnitDTO>
 {

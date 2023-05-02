@@ -1,6 +1,6 @@
 ﻿using PropertyRenting.Application.Queries.Unit;
 
-namespace PropertyRenting.Presentation.Endpoints.Unit.Queries.GetLookups.GetAll;
+namespace PropertyRenting.API.Endpoints.Unit.Queries.GetLookups.GetAll;
 
 
 internal sealed class Endpoint : EndpointWithoutRequest<List<BaseLookupDTO>>

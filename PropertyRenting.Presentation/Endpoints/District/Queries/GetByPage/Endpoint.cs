@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.District;
+﻿using PropertyRenting.API.Endpoints.District;
+using PropertyRenting.Application.Queries.District;
 
-namespace PropertyRenting.Presentation.Endpoints.District.Queries.GetByPage;
+namespace PropertyRenting.API.Endpoints.District.Queries.GetByPage;
 
 internal sealed class Endpoint : Endpoint<Request, PagedList<DistrictReadDTO>>
 {

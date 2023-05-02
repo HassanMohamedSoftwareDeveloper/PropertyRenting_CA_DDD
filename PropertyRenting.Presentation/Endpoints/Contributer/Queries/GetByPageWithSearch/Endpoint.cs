@@ -1,6 +1,7 @@
-﻿using PropertyRenting.Application.Queries.Contributer;
+﻿using PropertyRenting.API.Endpoints.Contributer;
+using PropertyRenting.Application.Queries.Contributer;
 
-namespace PropertyRenting.Presentation.Endpoints.Contributer.Queries.GetByPageWithSearch;
+namespace PropertyRenting.API.Endpoints.Contributer.Queries.GetByPageWithSearch;
 
 internal sealed class Endpoint : Endpoint<Request, PagedList<ContributerDTO>>
 {
